@@ -16,6 +16,8 @@
 		F130D5DD21B0CED7001D0581 /* XBVideoToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F130D5DC21B0CED7001D0581 /* XBVideoToolTests.m */; };
 		F130D5E821B0CED7001D0581 /* XBVideoToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F130D5E721B0CED7001D0581 /* XBVideoToolUITests.m */; };
 		F130D5F821B0D1AF001D0581 /* XBVideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = F130D5F721B0D1AF001D0581 /* XBVideoCapture.m */; };
+		F1AF586421B10FD600195922 /* XBVideoEncoder_system.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AF586321B10FD600195922 /* XBVideoEncoder_system.m */; };
+		F1AF586721B13CF100195922 /* XBDataWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AF586621B13CF100195922 /* XBDataWriter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,11 @@
 		F130D5E921B0CED7001D0581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F130D5F621B0D1AF001D0581 /* XBVideoCapture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBVideoCapture.h; sourceTree = "<group>"; };
 		F130D5F721B0D1AF001D0581 /* XBVideoCapture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBVideoCapture.m; sourceTree = "<group>"; };
+		F1AF586221B10FD600195922 /* XBVideoEncoder_system.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBVideoEncoder_system.h; sourceTree = "<group>"; };
+		F1AF586321B10FD600195922 /* XBVideoEncoder_system.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBVideoEncoder_system.m; sourceTree = "<group>"; };
+		F1AF586521B13CF100195922 /* XBDataWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBDataWriter.h; sourceTree = "<group>"; };
+		F1AF586621B13CF100195922 /* XBDataWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBDataWriter.m; sourceTree = "<group>"; };
+		F1AF586821B13D0500195922 /* Header_audio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header_audio.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +111,10 @@
 		F130D5C221B0CED7001D0581 /* XBVideoTool */ = {
 			isa = PBXGroup;
 			children = (
+				F1AF586821B13D0500195922 /* Header_audio.h */,
+				F1AF586521B13CF100195922 /* XBDataWriter.h */,
+				F1AF586621B13CF100195922 /* XBDataWriter.m */,
+				F1AF586121B10FC900195922 /* XBVideoEncoder */,
 				F130D5F521B0D0D3001D0581 /* XBVideoCapture */,
 				F130D5C321B0CED7001D0581 /* AppDelegate.h */,
 				F130D5C421B0CED7001D0581 /* AppDelegate.m */,
@@ -143,6 +154,15 @@
 				F130D5F721B0D1AF001D0581 /* XBVideoCapture.m */,
 			);
 			path = XBVideoCapture;
+			sourceTree = "<group>";
+		};
+		F1AF586121B10FC900195922 /* XBVideoEncoder */ = {
+			isa = PBXGroup;
+			children = (
+				F1AF586221B10FD600195922 /* XBVideoEncoder_system.h */,
+				F1AF586321B10FD600195922 /* XBVideoEncoder_system.m */,
+			);
+			path = XBVideoEncoder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +302,8 @@
 				F130D5C821B0CED7001D0581 /* ViewController.m in Sources */,
 				F130D5D321B0CED7001D0581 /* main.m in Sources */,
 				F130D5C521B0CED7001D0581 /* AppDelegate.m in Sources */,
+				F1AF586721B13CF100195922 /* XBDataWriter.m in Sources */,
+				F1AF586421B10FD600195922 /* XBVideoEncoder_system.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
